@@ -1,0 +1,17 @@
+<%- include('../partials/header', { title }) %>
+<section class="hero">
+  <p class="eyebrow">APLIKASI WEB MVC</p>
+  <h1>Selamat datang, <%= userName %>!</h1>
+  <p>Website sederhana yang dibangun menggunakan Node.js, Express.js, dan EJS.</p>
+  <a class="button" href="/katalog">Lihat Katalog</a>
+</section>
+
+<section class="card">
+  <h2>Fitur yang Dipelajari</h2>
+  <ul>
+    <% fiturList.forEach(function(fitur) { %>
+      <li><%= fitur %></li>
+    <% }); %>
+  </ul>
+</section>
+<%- include('../partials/footer') %>
